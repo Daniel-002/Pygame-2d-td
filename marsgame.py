@@ -2,7 +2,7 @@ import pygame
 
 pygame.init()
 
-screen = pygame.display.set_mode((1280, 720))
+screen = pygame.display.set_mode((800, 600))
 done = False
 is_blue = True
 x = 30
@@ -25,7 +25,7 @@ while not done:
 
     screen.fill((0, 0, 0))
     if is_blue:
-        color = (0, 128, 255)
+        color = (255, 0, 0)
     else:
         color = (255, 100, 0)
     pygame.draw.rect(screen, color, pygame.Rect(x, y, 60, 60))
