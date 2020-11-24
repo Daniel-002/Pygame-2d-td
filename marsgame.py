@@ -8,7 +8,7 @@ display = pygame.image
 
 astronaut = pygame.image.load('astronaut/astronaut-frame1.png')
 background = pygame.image.load('background-stars.png')
-dirt = pygame.image.load('pixil-layer-Background.png')
+dirt = pygame.image.load('sprite-0001.png')
 
 gameMap = [['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
            ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
@@ -24,7 +24,6 @@ gameMap = [['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'
            ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'],
            ]
 
-done = False
 is_blue = True
 x = 30
 y = 30
@@ -42,7 +41,17 @@ def drawingscreen():
     pygame.display.flip()
     clock.tick(60)
 
-while not done:
+while True:   #main game loop
+    for layer in gameMap:
+        x = 0
+        for tile in layer:
+            if tile == '0':
+                display.blit
+            if tile == '1':
+                display
+            if tile == '2':
+                display.blit(dirt,(x*32,y*32))
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
