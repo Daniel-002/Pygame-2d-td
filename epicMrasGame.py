@@ -7,8 +7,10 @@ clock = pygame.time.Clock()
 done = False
 
 pygame.display.set_caption('epic mars game')
-windowSize = (640, 480)
-screen = pygame.display.set_mode(windowSize,0,32)
+windowSize = (640, 360)
+screen = pygame.display.set_mode(windowSize, 1600, 900)
+
+background = pygame.image.load('background1.png')
 
 astronautR = [pygame.image.load('astronaut/astronaut-frame1.png'),
              pygame.image.load('astronaut/astronaut-frame2.png'),
@@ -41,7 +43,7 @@ tickPuls = 0
 
 
 while not done:
-    screen.fill((146, 244, 255))
+    screen.blit(background, (0, 0))
     if right == True:
         astronaut = astronautR
     elif left == True:
@@ -107,6 +109,12 @@ while not done:
     if movingLeft == True and movingUp == False and movingDown == True:
         playerPosition[0] -= 1.4
         playerPosition[1] += 1.4
+
+    if playerPosition[1] < 0:
+        playerPosition[1] = 0
+
+    if playerPosition[0] < 0:
+        playerPosition[0] = 0
 
 
 
