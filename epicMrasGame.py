@@ -1,0 +1,121 @@
+import pygame
+
+pygame.init()
+
+clock = pygame.time.Clock()
+
+done = False
+
+pygame.display.set_caption('epic mars game')
+windowSize = (640, 480)
+screen = pygame.display.set_mode(windowSize,0,32)
+
+astronautR = [pygame.image.load('astronaut/astronaut-frame1.png'),
+             pygame.image.load('astronaut/astronaut-frame2.png'),
+             pygame.image.load('astronaut/astronaut-frame3.png'),
+             pygame.image.load('astronaut/astronaut-frame4.png'),
+             pygame.image.load('astronaut/astronaut-frame5.png'),
+             pygame.image.load('astronaut/astronaut-frame6.png')]
+
+astronautL = [pygame.image.load('astronaut/astronaut-frame1L.png'),
+             pygame.image.load('astronaut/astronaut-frame2L.png'),
+             pygame.image.load('astronaut/astronaut-frame3L.png'),
+             pygame.image.load('astronaut/astronaut-frame4L.png'),
+             pygame.image.load('astronaut/astronaut-frame5L.png'),
+             pygame.image.load('astronaut/astronaut-frame6L.png')]
+
+idelAstronaut = [pygame.image.load('astronaut/astronaut-frame1.png'),
+                 pygame.image.load('astronaut/astronaut-frame1L.png')]
+
+playerPosition = [320, 240]
+
+movingUp = False
+movingDown = False
+movingRight = False
+movingLeft = False
+right = True
+left = True
+
+aniTick = 0
+tickPuls = 0
+
+
+while not done:
+    screen.fill((146, 244, 255))
+    if right == True:
+        astronaut = astronautR
+    elif left == True:
+        astronaut = astronautL
+
+    if movingUp == True or movingDown == True or movingLeft == True or movingRight == True:
+        if aniTick >=6:
+            aniTick = 0
+        screen.blit(astronaut[aniTick], (playerPosition))
+        tickPuls += 1
+
+        if tickPuls >= 6:
+            aniTick += 1
+            tickPuls = 0
+    else:
+        if right == True:
+            screen.blit(idelAstronaut[0], (playerPosition))
+        elif left == True:
+            screen.blit(idelAstronaut[1], (playerPosition))
+
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            done = True
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_w or event.key == pygame.K_UP:
+                movingUp = True
+            elif event.key == pygame.K_a or event.key == pygame.K_LEFT:
+                movingLeft = True
+                right = False
+            elif event.key == pygame.K_s or event.key == pygame.K_DOWN:
+                movingDown = True
+            elif event.key == pygame.K_d or event.key == pygame.K_RIGHT:
+                movingRight = True
+                right = True
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_w or event.key == pygame.K_UP:
+                movingUp = False
+            elif event.key == pygame.K_a or event.key == pygame.K_LEFT:
+                movingLeft = False
+            elif event.key == pygame.K_s or event.key == pygame.K_DOWN:
+                movingDown = False
+            elif event.key == pygame.K_d or event.key == pygame.K_RIGHT:
+                movingRight = False
+
+    if movingUp == True and movingRight == False and movingLeft == False:
+        playerPosition[1] -= 2
+    if movingDown == True and movingRight == False and movingLeft == False:
+        playerPosition[1] += 2
+    if movingRight == True and movingUp == False and movingDown == False:
+        playerPosition[0] += 2
+    if movingLeft == True and movingUp == False and movingDown == False:
+        playerPosition[0] -= 2
+    if movingUp == True and movingRight == True and movingLeft == False:
+        playerPosition[0] += 1.4
+        playerPosition[1] -= 1.4
+    if movingDown == True and movingRight == True and movingLeft == False:
+        playerPosition[0] += 1.4
+        playerPosition[1] += 1.4
+    if movingLeft == True and movingUp == True and movingDown == False:
+        playerPosition[0] -= 1.4
+        playerPosition[1] -= 1.4
+    if movingLeft == True and movingUp == False and movingDown == True:
+        playerPosition[0] -= 1.4
+        playerPosition[1] += 1.4
+
+
+
+
+
+
+
+
+
+
+    pygame.display.update()
+    clock.tick(60)

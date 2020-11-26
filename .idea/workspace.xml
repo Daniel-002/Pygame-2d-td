@@ -10,10 +10,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="1c0ea0e4-102b-4ec6-bf48-627353c602f9" />
+  <component name="JupyterTrust" id="103294e5-45fb-4daa-a087-db25e7c2e3b8" />
   <component name="ProjectId" id="1kKuVgE1Y2XUwlIy0ZOWdjAT5hw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,7 +32,29 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/marsgame.py" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.epicMrasGame">
+    <configuration name="epicMrasGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/epicMrasGame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="marsgame" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.epicMrasGame" />
         <item itemvalue="Python.marsgame" />
       </list>
     </recent_temporary>
@@ -65,6 +95,7 @@
       <workItem from="1605461632294" duration="604000" />
       <workItem from="1605557214934" duration="2338000" />
       <workItem from="1606208828747" duration="814000" />
+      <workItem from="1606411806740" duration="7461000" />
     </task>
     <servers />
   </component>
@@ -80,32 +111,53 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605557385827" />
-    <state width="746" height="213" key="GridCell.Tab.0.bottom" timestamp="1606209641458">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1606420224841">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="746" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606209641458" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605560396060" />
-    <state width="746" height="213" key="GridCell.Tab.0.center" timestamp="1606209641458">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606420224841" />
+    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1606420224840">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="746" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606209641458" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605560396060" />
-    <state width="746" height="213" key="GridCell.Tab.0.left" timestamp="1606209641458">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606420224840" />
+    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1606420224840">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="746" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606209641458" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605560396060" />
-    <state width="746" height="213" key="GridCell.Tab.0.right" timestamp="1606209641458">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606420224840" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1606420224841">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="746" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606209641458" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605560396060" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606420224841" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1606418261870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606418261870" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1606418261870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606418261870" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1606418261870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606418261870" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1606418261870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606418261870" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1605558206150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605558206150" />
+    <state x="673" y="341" width="672" height="678" key="search.everywhere.popup" timestamp="1606414314648">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="673" y="341" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606414314648" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/marsgame_py$marsgame.coverage" NAME="marsgame Coverage Results" MODIFIED="1606209641411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/marsgame_py$epicMrasGame.coverage" NAME="epicMrasGame Coverage Results" MODIFIED="1606420224836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/marsgame_py$marsgame.coverage" NAME="marsgame Coverage Results" MODIFIED="1606413137783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
