@@ -10,7 +10,10 @@ pygame.display.set_caption('epic mars game')
 windowSize = (640, 360)
 screen = pygame.display.set_mode(windowSize, 1600, 900)
 
-background = pygame.image.load('background1.png')
+camera = [0, 0]
+
+
+background = pygame.image.load('MarsMap.png')
 
 astronautR = [pygame.image.load('astronaut/astronaut-frame1.png'),
              pygame.image.load('astronaut/astronaut-frame2.png'),
@@ -28,6 +31,7 @@ astronautL = [pygame.image.load('astronaut/astronaut-frame1L.png'),
 
 idelAstronaut = [pygame.image.load('astronaut/astronaut-frame1.png'),
                  pygame.image.load('astronaut/astronaut-frame1L.png')]
+
 
 playerPosition = [320, 240]
 
@@ -48,6 +52,13 @@ while not done:
         astronaut = astronautR
     elif left == True:
         astronaut = astronautL
+
+    srfes = pygame.Surface((32,32), False, (255, 255, 255))
+    srfesrect = pygame.Rect(50, 50, 32, 32)
+    pygame.draw.rect(srfes,srfesrect)
+
+    camera[0] += (camera[0] - playerPosition[0])/2
+    camera[1] += (camera[1] - playerPosition[1])/2
 
     if movingUp == True or movingDown == True or movingLeft == True or movingRight == True:
         if aniTick >=6:
@@ -115,7 +126,6 @@ while not done:
 
     if playerPosition[0] < 0:
         playerPosition[0] = 0
-
 
 
 
