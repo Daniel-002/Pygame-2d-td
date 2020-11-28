@@ -55,7 +55,7 @@ while not done:
 
     srfes = pygame.Surface((32,32), False, (255, 255, 255))
     srfesrect = pygame.Rect(50, 50, 32, 32)
-    pygame.draw.rect(srfes,srfesrect)
+    pygame.draw.rect(srfes, (0, 0, 255), srfesrect)
 
     camera[0] += (camera[0] - playerPosition[0])/2
     camera[1] += (camera[1] - playerPosition[1])/2
